@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度界面</title>
+    <style>
+        /* 头部框架 */
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+        li{
+            display: inline;
+            font-weight:bold;
+            color:black;
+            text-align:center;
+            padding:6px;
+            text-decoration:none;
+            text-transform:uppercase;
+        }
+        #head{
+            position: relative;
+            width: 100%;
+            height:100%;
+        }
+        #head-left{
+            height: 32px;
+            width: 330px;
+        }
+        #head-right{
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: right;
+            color: #999;
+            height: 32px;
+            width: 670px;
+        }
+        head,body{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        body{
+            position: relative;
+            height: 180px;
+            text-align:center
+        }
+        #input1{
+            height: 38px;
+            width: 536px;
+            border: 1px solid #ccc;
+            padding: 7px ;
+            border-radius: 3px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+        }
+        #input2{
+            height: 38px;
+            background-color: #317ef3;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="all">
+    <div id="head">
+        <!--左顶边框-->
+        <div id="head-left">
+            <ul>
+                <li>重庆：21°</li>
+                <li>优</li>
+                <li>换肤</li>
+                <li>消息</li>
+                <li>显示频道</li>
+            </ul>
+        </div>
+        <!--右顶边框-->
+        <div id="head-right">
+            <ul>
+                <li><a href="http://news.baidu.com" target="_blank" class="mnav">新闻</a></li>
+                <li><a href="https://www.hao123.com" target="_blank" class="mnav">hao123</a></li>
+                <li><a href="http://map.baidu.com" target="_blank" class="mnav">地图</a></li>
+                <li><a href="http://v.baidu.com" target="_blank" class="mnav">视频</a></li>
+                <li><a href="http://tieba.baidu.com" target="_blank" class="mnav">贴吧</a></li>
+                <li><a href="http://xueshu.baidu.com" target="_blank" class="mnav">学术</a></li>
+                <li><a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" class="lb" onclick="return false;">登录</a></li>
+                <li><span class="setting-text">设置</span></li>
+                <!--更多产品-->
+                <li><a href="http://www.baidu.com/more/" class="s_bri" target="_blank"> 更多产品</a></li>
+            </ul>
+        </div>
+        <hr>
+    </div>
+    <div id="body">
+        <a href="https://www.baidu.com/" target="_blank">
+            <img src="批注%202019-10-18%20172356.png" height="161" width="313">
+        </a>
+        <div >
+            <label>
+                <input id="input1" type="text" maxlength="100" autocomplete="off">
+            </label>
+            <input id="input2"  type="submit" value="百度一下" >
+        </div>
+
+    </div>
+    <div id="foot"></div>
+</div>
+
+</body>
+</html>
+
+<!--实在是太粗糙了（捂脸） 后面再重新提交一份  呜呜呜-->
